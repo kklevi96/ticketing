@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Filebrowser/Dockerfile
+          file: ./ticketing/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/filebrowser:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ticketing:latest
