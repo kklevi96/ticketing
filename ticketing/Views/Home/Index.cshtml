@@ -1,8 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gondok Listája</title>
+</head>
+<body>
+    <h2>Mi a gond?</h2>
+    <form action="/Home/GondSubmitted" method="post">
+        <div class="form-group">
+            <label for="gond">Gond:</label>
+            <input type="text" id="gond" name="gond">
+        </div>
+        <button type="submit">Beküldés</button>
+    </form>
+</body>
+</html>
